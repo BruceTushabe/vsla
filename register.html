@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Village Savings and Lending Association</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="index.php">Home</a>
+        <a href="login.php">Login</a>
+        <a href="#" class="active">Register</a>
+    </div>
+
+    <div class="main">
+        <h2>Register</h2>
+        <form action="register.php" method="post">
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+            <button type="submit" name="register">Register</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Village Savings and Lending Association</p>
+    </div>
