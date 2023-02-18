@@ -4,36 +4,38 @@ body {
 	font-family: Arial, sans-serif;
 }
 
-header {
-	background-color: #333;
-	color: #fff;
+.header {
+    background-color: #008CBA;
+	color: white;
+	text-align: center;
 	padding: 15px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	
 }
 
-nav {
-	display: inline-block;
-}
+.navbar {
+        overflow: hidden;
+        background-color: #333;
+        padding: 15px;
+        text-align: center;
+    }
 
-nav ul {
+.navbar ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	display: flex;
 }
 
-nav li {
+.navbar li {
 	margin-left: 20px;
 }
 
-nav a {
+.navbar a {
 	color: #fff;
 	text-decoration: none;
 }
 
-nav a.active {
+.nav a.active {
 	font-weight: bold;
 }
 
@@ -49,6 +51,7 @@ h1 {
 form label {
 	display: block;
 	margin-bottom: 10px;
+    
 }
 
 form input {
@@ -57,6 +60,7 @@ form input {
 	display: block;
 	border: none;
 	border-radius: 5px;
+    color: black;
 }
 
 form button {
@@ -123,7 +127,7 @@ table th {
 	width: 100%; /* Full width */
 	height: 100%; /* Full height */
 	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0,0,0); /* Fallback color */
+	/*background-color: rgb(0,0,0); /* Fallback color */
 	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Loans - Village Savings and Loan Association</title>
+	<link rel="stylesheet" href="loans.css">
+</head>
+<body>
+	<div class="header">
+		<h2>Loans</h2>
+	</div>
+	<div class="navbar">
+		<ul>
+			<li><a href="dashboard.php">Home</a></li>
+			<li><a href="savings.php">Savings</a></li>
+			<li><a href="#">Loans</a></li>
+			<li><a href="members.php">Members</a></li>
+			<li><a href="#">Reports</a></li>
+			<li><a href="logout.php">Logout</a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<h2>Loan History</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Member Name</th>
+					<th>Loan Amount</th>
+					<th>Interest Rate</th>
+					<th>Loan Date</th>
+					<th>Due Date</th>
+					<th>Status</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>John Doe</td>
+					<td>$1000</td>
+					<td>5%</td>
+					<td>2022-01-01</td>
+					<td>2022-07-01</td>
+					<td>Active</td>
+					<td>
+						<button>Edit</button>
+						<button>Delete</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Jane Smith</td>
+					<td>$500</td>
+					<td>3%</td>
+					<td>2022-02-01</td>
+					<td>2022-08-01</td>
+					<td>Active</td>
+					<td>
+						<button>Edit</button>
+						<button>Delete</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2>Add New Loan</h2>
+		<form>
+			<label for="member_name">Member Name:</label>
+			<select id="member_name" name="member_name">
+				<option value="">Select Member Name</option>
+				<option value="John Doe">John Doe</option>
+				<option value="Jane Smith">Jane Smith</option>
+			</select>
+			<label for="loan_amount">Loan Amount:</label>
+			<input type="number" id="loan_amount" name="loan_amount" required>
+			<label for="interest_rate">Interest Rate:</label>
+			<input type="number" id="interest_rate" name="interest_rate" step="0.01" required>
+			<label for="loan_date">Loan Date:</label>
+			<input type="date" id="loan_date" name="loan_date" required>
+			<label for="due_date">Due Date:</label>
+			<input type="date" id="due_date" name="due_date" required>
+			<button type="submit">Add Loan</button>
+		</form>
+	</div>
+	<div class="footer">
+		<p>&copy; 2023 Village Savings and Lending Association</p>
+	</div>
+</body
