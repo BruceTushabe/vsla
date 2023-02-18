@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: #008CBA;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .navbar {
+    overflow: hidden;
+	background-color: #333;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin-left: 20px;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar a.active {
+    font-weight: bold;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    display: block;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+    font-weight: normal;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .table-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .table-actions a {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #333;
+    border-radius: 5px;
+  }
+  
+  .table-actions a.edit {
+    background-color: #2196F3;
+  }
+  
+  .table-actions a.delete {
+    background-color: #F44336;
+  }
+  
+  .alert {
+    background-color: #f2dede;
+    color: #a94442;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  

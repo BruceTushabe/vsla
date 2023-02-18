@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Members - Village Savings and Loan Association</title>
+	<link rel="stylesheet" href="members.css">
+</head>
+<body>
+	<div class="header">
+		<h2>Members</h2>
+	</div>
+	<div class="navbar">
+		<ul>
+			<li><a href="dashboard.php">Dashboard</a></li>
+			<li><a href="savings.php">Savings</a></li>
+			<li><a href="loans.php">Loans</a></li>
+			<li><a href="#">Members</a></li>
+			<li><a href="#">Reports</a></li>
+			<li><a href="logout.php">Logout</a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<h2>Members List</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Member Name</th>
+					<th>Phone Number</th>
+					<th>Email</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php while ($row = mysqli_fetch_assoc($result)) { ?>
+				<tr>
+					<td><?php echo $row['member_name']; ?></td>
+					<td><?php echo $row['phone_number']; ?></td>
+					<td><?php echo $row['email']; ?></td>
+					<td><a href="edit_member.php?id=<?php echo $row['member_id']; ?>">Edit</a> | <a href="delete_member.php?id=<?php echo $row['member_id']; ?>" onclick="return confirm('Are you sure you want to delete this member?')">Delete</a></td>
+				</tr>
+				<?php } ?>
+			</tbody>
+		</table>
+		<h2>Add Member</h2>
+		<form method="post" action="add_member.php">
+			<label for="member_name">Member Name:</label>
+			<input type="text" id="member_name" name="member_name" required>
+			<label for="phone_number">Phone Number:</label>
+			<input type="text" id="phone_number" name="phone_number" required>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<button type="submit">Add Member</button>
+		</form>
+	</div>
+	<div class="footer">
+		<p>&copy; 2023 Village Savings and Lending Association</p>
+	</div>
+</body>
+</html>
